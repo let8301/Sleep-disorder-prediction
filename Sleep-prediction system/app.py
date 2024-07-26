@@ -9,7 +9,7 @@ from plots import plot_pie_chart, plot_countplot, hist_plot, histogram, scatter_
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
 current_dir = os.path.dirname(__file__)
-csv_path = os.path.join(current_dir, "../assets/Sleep_health_and_lifestyle_dataset.csv")
+csv_path = os.path.join(current_dir, "../assets/sleep.csv")
 
 
 with open('../assets/sleep_prediction_dt.pkl', 'rb') as file:
