@@ -9,10 +9,10 @@ from plots import plot_pie_chart, plot_countplot, hist_plot, histogram, scatter_
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
 current_dir = os.path.dirname(__file__)
-csv_path = os.path.join(current_dir, "../assets/sleep_disorder.csv")
+csv_path = os.path.join(current_dir, "../assets/sleep_disorder1.csv")
 
 
-with open('../assets/sleep_prediction_dt.pkl', 'rb') as file:
+with open('../assets/sleep_disorderprediction_dt1.pkl', 'rb') as file:
     model = pickle.load(file)
 ds = pd.read_csv(csv_path)
 disorder_mapping = {
